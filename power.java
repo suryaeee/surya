@@ -5,23 +5,23 @@ public class Power {
     {
         Scanner sc=new Scanner(System.in);
         int num = 0;
+        int p= 0;
         int pow = 0;
-        int power = 0;
 
         System.out.print("Enter number: ");
         num = sc.nextInt();
 
         System.out.print("Enter power: ");
-        pow = sc.nextInt();
+        p = sc.nextInt();
 
-        System.out.print(power(num,pow));
+        System.out.print(pow(num,p));
     }
-    public static int power(int a, int b)
+    public static int pow(int a, int b)
     {
-            int power = 1;
+            int pow = 1;
             for(int c=0;c<b;c++)
-            power*=a;
-            return power;
+            pow*=a;
+            return pow;
         }
 
 }
